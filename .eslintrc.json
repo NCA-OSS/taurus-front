@@ -10,10 +10,11 @@
   },
   "rules": {
     "no-unused-vars": [
-      1,
+      "error",
       {
         "args": "after-used",
-        "argsIgnorePattern": "^_"
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
       }
     ]
   },
