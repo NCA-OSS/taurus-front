@@ -42,4 +42,11 @@ export const parameters = {
     },
   },
   viewport: { viewports: customViewports },
+  themes: {
+    default: "orange",
+    list: [
+      { name: "orange", class: "theme-orange" },
+      { name: "blue", class: "theme-blue" },
+    ],
+  },
 };

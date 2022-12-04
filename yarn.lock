@@ -2732,7 +2732,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addons@npm:6.5.14":
+"@storybook/addons@npm:6.5.14, @storybook/addons@npm:^6.0.0":
   version: 6.5.14
   resolution: "@storybook/addons@npm:6.5.14"
   dependencies:
@@ -2754,7 +2754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/api@npm:6.5.14":
+"@storybook/api@npm:6.5.14, @storybook/api@npm:^6.0.0":
   version: 6.5.14
   resolution: "@storybook/api@npm:6.5.14"
   dependencies:
@@ -2975,7 +2975,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/components@npm:6.5.14":
+"@storybook/components@npm:6.5.14, @storybook/components@npm:^6.0.0":
   version: 6.5.14
   resolution: "@storybook/components@npm:6.5.14"
   dependencies:
@@ -3093,7 +3093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core-events@npm:6.5.14":
+"@storybook/core-events@npm:6.5.14, @storybook/core-events@npm:^6.0.0":
   version: 6.5.14
   resolution: "@storybook/core-events@npm:6.5.14"
   dependencies:
@@ -3613,7 +3613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:6.5.14":
+"@storybook/theming@npm:6.5.14, @storybook/theming@npm:^6.0.0":
   version: 6.5.14
   resolution: "@storybook/theming@npm:6.5.14"
   dependencies:
@@ -5990,7 +5990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
+"core-js@npm:^3.0.4, core-js@npm:^3.6.4, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
   version: 3.26.1
   resolution: "core-js@npm:3.26.1"
   checksum: 0a01149f51ff1e9f41d1ea49cc4c9222047949ea597189ede7c4cf8cde3b097766b9c7615acc77c86fe65b4002f20b638a133dfba7b41dba830d707aeeed45ad
@@ -13089,6 +13089,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"storybook-addon-themes@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "storybook-addon-themes@npm:6.1.0"
+  dependencies:
+    "@storybook/addons": ^6.0.0
+    "@storybook/api": ^6.0.0
+    "@storybook/components": ^6.0.0
+    "@storybook/core-events": ^6.0.0
+    "@storybook/theming": ^6.0.0
+    core-js: ^3.6.4
+    global: ^4.4.0
+    memoizerific: ^1.11.3
+  peerDependenciesMeta:
+    react:
+      optional: true
+    svelte:
+      optional: true
+    vue:
+      optional: true
+  checksum: 35c87ad90f270c88f21838f9e7b90864b34ace7a4920a7f8d4d4c00c5f40702fe1758348efe973392fe1b134b4f4d7848f72f842cda3dba78a29a0be007e86af
+  languageName: node
+  linkType: hard
+
 "string-width@npm:^1.0.2 || 2 || 3 || 4, string-width@npm:^4.0.0, string-width@npm:^4.1.0, string-width@npm:^4.2.0, string-width@npm:^4.2.2, string-width@npm:^4.2.3":
   version: 4.2.3
   resolution: "string-width@npm:4.2.3"
@@ -13460,6 +13483,7 @@ __metadata:
     prettier: ^2.8.0
     react: 18.2.0
     react-dom: 18.2.0
+    storybook-addon-themes: ^6.1.0
     tailwindcss: ^3.2.4
     typescript: 4.9.3
     util: ^0.12.5

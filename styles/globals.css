@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-neutral-50: theme("colors.gray.50");
+    --color-neutral-100: theme("colors.gray.100");
+    --color-neutral-200: theme("colors.gray.200");
+    --color-neutral-300: theme("colors.gray.300");
+    --color-neutral-400: theme("colors.gray.400");
+    --color-neutral-500: theme("colors.gray.500");
+    --color-neutral-600: theme("colors.gray.600");
+    --color-neutral-700: theme("colors.gray.700");
+    --color-neutral-800: theme("colors.gray.800");
+    --color-neutral-900: theme("colors.gray.900");
+  }
+
+  .theme-orange {
+    --color-primary-50: #ffb391;
+    --color-primary-100: #ffa37b;
+    --color-primary-200: #ff9465;
+    --color-primary-300: #ff854f;
+    --color-primary-400: #ff7539;
+    --color-primary-500: #ff6623;
+    --color-primary-600: #e65c20;
+    --color-primary-700: #cc521c;
+    --color-primary-800: #b34719;
+    --color-primary-900: #993d15;
+  }
+
+  .theme-blue {
+    --color-primary-50: #899fc6;
+    --color-primary-100: #718bba;
+    --color-primary-200: #5a78af;
+    --color-primary-300: #4265a3;
+    --color-primary-400: #2b5198;
+    --color-primary-500: #133e8c;
+    --color-primary-600: #11387e;
+    --color-primary-700: #0f3270;
+    --color-primary-800: #0d2b62;
+    --color-primary-900: #0b2554;
+  }
+}
