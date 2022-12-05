@@ -7,7 +7,7 @@ export interface ILoginCard {
 
 const LoginCard: React.FC<ILoginCard> = ({ onSubmit }) => {
   return (
-    <div className="p-5 rounded-lg bg-white max-w-md">
+    <div className="p-5 rounded-lg bg-white md:w-1/2 max-w-md">
       <div className="mb-3">
         <h2 className="text-2xl font-bold">Login</h2>
         <p className="text-slate-500 text-sm">
