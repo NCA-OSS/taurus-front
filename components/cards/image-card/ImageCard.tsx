@@ -15,7 +15,7 @@ const ImageCard: React.FC<IImageCard> = ({
   buttonTitle,
 }) => {
   return (
-    <div className="rounded-xl max-w-md bg-white">
+    <div className="rounded-xl max-w-lg bg-white">
       <Image
         className="rounded-xl"
         src={imageUrl}
