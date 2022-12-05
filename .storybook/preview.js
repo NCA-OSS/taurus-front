@@ -1,4 +1,3 @@
-import * as NextImage from "next/image";
 import "../styles/globals.css";
 
 const BREAKPOINTS_INT = {
@@ -25,14 +24,6 @@ const customViewports = Object.fromEntries(
   })
 );
 
-// Allow Storybook to handle Next's <Image> component
-const OriginalNextImage = NextImage.default;
-
-Object.defineProperty(NextImage, "default", {
-  configurable: true,
-  value: (props) => <OriginalNextImage {...props} unoptimized />,
-});
-
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -47,6 +38,15 @@ export const parameters = {
     list: [
       { name: "orange", class: "theme-orange", color: "#ff6623" },
       { name: "blue", class: "theme-blue", color: "#133e8c" },
+    ],
+  },
+  backgrounds: {
+    default: "primary",
+    values: [
+      {
+        name: "primary",
+        value: "#f7eeea",
+      },
     ],
   },
 };
