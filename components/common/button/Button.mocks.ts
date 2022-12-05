@@ -27,6 +27,15 @@ const outline: IButton = {
   fullWidth: false,
 };
 
+const plain: IButton = {
+  children: "Submit",
+  variant: "plain",
+  size: "medium",
+  loading: false,
+  disabled: false,
+  fullWidth: false,
+};
+
 const disabled: IButton = {
   children: "Submit",
   variant: "default",
@@ -71,4 +80,5 @@ export const mockButtonProps = {
   small,
   large,
   fullWidth,
+  plain,
 };

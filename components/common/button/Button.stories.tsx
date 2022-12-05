@@ -33,6 +33,13 @@ Outline.args = {
   ...mockButtonProps.outline,
 } as IButton;
 
+export const Plain = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+Plain.args = {
+  ...mockButtonProps.plain,
+} as IButton;
+
 export const Disabled = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 

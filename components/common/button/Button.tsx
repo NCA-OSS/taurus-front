@@ -7,6 +7,7 @@ const button = cva("border-2 rounded-md relative font-bold", {
     variant: {
       default: "bg-primary hover:bg-secondary text-white",
       outline: "bg-white",
+      plain: "bg-transparent border-transparent",
     },
     size: {
       small: "px-2 py-1 text-xs",
@@ -42,6 +43,16 @@ const button = cva("border-2 rounded-md relative font-bold", {
       variant: "default",
       className: "border-primary hover:border-secondary",
     },
+    {
+      disabled: true,
+      variant: "plain",
+      className: "text-slate-300",
+    },
+    {
+      disabled: false,
+      variant: "plain",
+      className: "text-primary",
+    },
   ],
   defaultVariants: {
     variant: "default",
@@ -57,7 +68,7 @@ export interface IButton
   loading?: boolean;
   disabled?: boolean;
   fullWidth?: boolean;
-  variant?: "default" | "outline";
+  variant?: "default" | "outline" | "plain";
   size?: "small" | "medium" | "large";
 }
 
