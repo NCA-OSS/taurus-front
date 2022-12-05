@@ -46,6 +46,8 @@ const button = cva("border-2 rounded-md relative font-bold", {
   defaultVariants: {
     variant: "default",
     size: "medium",
+    disabled: false,
+    fullWidth: false,
   },
 });
 
@@ -61,11 +63,11 @@ export interface IButton
 
 const Button: React.FC<IButton> = ({
   children,
-  variant = "default",
-  size = "medium",
-  fullWidth = false,
-  disabled = false,
-  loading = false,
+  variant,
+  size,
+  fullWidth,
+  disabled,
+  loading,
 }: IButton) => {
   return (
     <button className={button({ variant, size, fullWidth, disabled })}>

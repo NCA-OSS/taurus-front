@@ -3,7 +3,7 @@ import Button, { IButton } from "./Button";
 import { mockButtonProps } from "./Button.mocks";
 
 export default {
-  title: "common/Button",
+  title: "Components/Common/Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
@@ -38,4 +38,25 @@ export const Disabled = Template.bind({});
 
 Disabled.args = {
   ...mockButtonProps.disabled,
+} as IButton;
+
+export const Small = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+Small.args = {
+  ...mockButtonProps.small,
+} as IButton;
+
+export const Large = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+Large.args = {
+  ...mockButtonProps.large,
+} as IButton;
+
+export const FullWidth = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+FullWidth.args = {
+  ...mockButtonProps.fullWidth,
 } as IButton;
