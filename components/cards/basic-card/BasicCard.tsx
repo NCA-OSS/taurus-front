@@ -1,11 +1,15 @@
 import classNames from "classnames";
 
-export interface IBasicCard extends HTMLDivElement {
+export interface IBasicCard {
   title: string;
   description: string;
 }
 
-const BasicCard: React.FC<IBasicCard> = ({ title, description, className }) => {
+const BasicCard: React.FC<IBasicCard & HTMLDivElement> = ({
+  title,
+  description,
+  className,
+}) => {
   return (
     <div
       className={classNames(
