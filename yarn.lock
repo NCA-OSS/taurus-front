@@ -5616,6 +5616,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "class-variance-authority@npm:0.3.0"
+  peerDependencies:
+    typescript: ">= 4.5.5 < 5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 9d21cfc9afa2e1e9002bcdbb0aa65ca23baf9f42166edf65b9e17b875e2b90bda36e758fb0d08e9dacaccacf9cf2fea48073fe6f022d2cf277f44b619b8eb188
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.3.2":
+  version: 2.3.2
+  resolution: "classnames@npm:2.3.2"
+  checksum: 2c62199789618d95545c872787137262e741f9db13328e216b093eea91c85ef2bfb152c1f9e63027204e2559a006a92eb74147d46c800a9f96297ae1d9f96f4e
+  languageName: node
+  linkType: hard
+
 "clean-css@npm:^4.2.3":
   version: 4.2.4
   resolution: "clean-css@npm:4.2.4"
@@ -13473,6 +13492,8 @@ __metadata:
     "@types/react-dom": 18.0.9
     autoprefixer: ^10.4.13
     babel-loader: ^8.3.0
+    class-variance-authority: ^0.3.0
+    classnames: ^2.3.2
     cross-env: ^7.0.3
     eslint: 8.29.0
     eslint-config-next: 13.0.6

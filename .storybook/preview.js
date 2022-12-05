@@ -45,8 +45,8 @@ export const parameters = {
   themes: {
     default: "orange",
     list: [
-      { name: "orange", class: "theme-orange" },
-      { name: "blue", class: "theme-blue" },
+      { name: "orange", class: "theme-orange", color: "#ff6623" },
+      { name: "blue", class: "theme-blue", color: "#133e8c" },
     ],
   },
 };
